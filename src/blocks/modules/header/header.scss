@@ -1,0 +1,57 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+}
+
+.header {
+  &__wrapper {
+    @include wrapper;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 105px;
+  }
+
+  &__text {
+    color: #9a9a9a;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 30px;
+    margin-right: auto;
+    margin-left: 30px;
+  }
+
+  &__phone {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+  }
+  &__phone::after {
+    position: absolute;
+    content: '';
+    background-image: url('../img/svg/phone.svg');
+    width: 16px;
+    height: 15px;
+    top: 5px;
+    left: -27px;
+  }
+
+
+  &__link {
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 500;
+    color: #303030;
+    font-weight: 500;
+    line-height: 30px;
+  }
+
+  &__phone--text {
+    font-size: 12px;
+    font-weight: 400;
+    text-align: right;
+    padding-top: 3px;
+  }
+
+}
