@@ -2,7 +2,7 @@
   margin-bottom: 75px;
 
   &__images {
-    
+
     background-image: url('../img/jpg/bg_img.jpg');
     background-size: cover;
     background-position: center center;
@@ -15,13 +15,14 @@
   &__wrapper {
     margin-top: -450px;
   }
+
   &__container {
     max-width: 1170px;
     width: 100%;
     margin: 0 auto;
     padding: 0 15px;
   }
-  
+
   &__inner {
     display: flex;
     justify-content: space-between;
@@ -37,7 +38,7 @@
   }
 
   &__inner-suptitle {
-    margin-top: 80px;
+    margin-top: 56px;
     margin-bottom: 25px;
 
     font-weight: 700;
@@ -63,6 +64,8 @@
     line-height: 24px;
     color: #fff;
   }
+
+  
 
   // &__inner-img {
   //   position: absolute;
@@ -141,11 +144,15 @@
     color: #000;
     font-weight: 400;
 
-    width: 200px;
+    width: 195px;
   }
 
   input::placeholder {
     color: #c8dcba;
+  }
+
+  input+input {
+    margin-left: 30px;
   }
 
   button {
@@ -179,10 +186,9 @@
     top: 25px;
 
   }
-
 }
 
-top-form :nth-child(2) {
+.top-form:nth-child(2) {
   margin-right: 27px;
 }
 

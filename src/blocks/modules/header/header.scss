@@ -1,9 +1,45 @@
+*, *::before, *::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+
 body {
   font-family: 'Montserrat', sans-serif;
   font-weight: 400;
 }
 
 .header {
+
   &__wrapper {
     @include wrapper;
     display: flex;
@@ -27,6 +63,7 @@ body {
     display: flex;
     flex-direction: column;
   }
+
   &__phone::after {
     position: absolute;
     content: '';

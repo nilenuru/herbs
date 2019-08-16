@@ -1,0 +1,147 @@
+.symptoms {
+  position: relative;
+  background-color: #f6f9f3;
+  &__container {
+    @include wrapper;
+  }
+
+  &__title {
+    position: absolute;
+    color: #303030;
+    font-family: Montserrat;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 50px;
+    max-width: 446px;
+    padding-bottom: 70px;
+  }
+
+  
+
+  &__wrapper {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.tabs {
+  background-color: #f6f9f3;
+  text-align: left;
+  padding-right: 20px;
+  padding-top: 180px;
+   width: 100%;
+  .tab {
+    color: #303030;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 20px;
+    text-transform: uppercase;
+    letter-spacing: 0.7px;
+    padding: 20px 0;
+    border-bottom: 1px solid #f6f9f3;
+    cursor: pointer;
+  }
+
+  .tabs__box {
+    display: flex;
+    flex-wrap: wrap;
+
+    .tab {
+      max-width: 339px;
+      padding-right: 48px;
+      color: #303030;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 20px;
+      border: 1px solid #f6f9f3;
+      display: flex;
+      text-transform: inherit;
+    }
+  }
+
+  &__content {
+    background-image: url('../img/jpg/symptoms.jpg');
+    min-width: 500px;
+    height: 689px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top top;
+    position: relative;
+
+    .tab-item {
+      display: none;
+      width: 44px;
+      height: 44px;
+      color: #ffffff;
+      font-size: 12px;
+      font-weight: 700;
+      line-height: 25px;
+      border: 9px solid rgba(255, 255, 255, .8);
+      border-radius: 50%;
+      position: absolute;
+      text-align: center;
+    }
+
+    .item-1 {
+      left: 150px;
+      top: 182px;
+    }
+
+    .item-2 {
+      left: 300px;
+      top: 200px;
+    }
+
+    .item-3 {
+      left: 228px;
+      top: 135px;
+    }
+
+    .item-4 {
+      left: 250px;
+      top: 250px;
+    }
+
+    .item-5 {
+      left: 227px;
+      top: 9px;
+    }
+
+    .item-6 {
+      left: 195px;
+      top: 360px;
+    }
+
+    .item-7 {
+
+      left: 190px;
+      top: 150px;
+    }
+
+    .item-8 {
+      left: 244px;
+      top: 212px;
+    }
+
+    .item-9 {
+      left: 210px;
+      top: 65px;
+    }
+
+    .tab-item:first-child {
+      display: block;
+    }
+  }
+
+  span {
+    padding-right: 21px;
+    color: #a4c58c;
+  }
+
+  // &__box{
+  //   display: flex;
+
+  // }
+}
