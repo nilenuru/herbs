@@ -1,0 +1,121 @@
+.cause {
+  position: relative;
+  margin-bottom: 150px;
+  display: flex;
+  
+
+  &__img {
+    background-image: url('../img/jpg/cause__img.jpg');
+    width: 875px;
+    height: 645px;
+    margin-right: 70px;
+    z-index: -1;
+  }
+
+  &__popup {
+    right: 0;
+    width: 601px;
+    height: 251px;
+    background-color: #ffffff;
+    position: absolute;
+    top: 480px;
+    left: 275px;
+    padding: 20px;
+    &-text {
+      color: #303030;
+      font-family: Montserrat;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 24px;
+      }
+  }
+
+  &__popup-wrapper {
+    border: 1px solid #c8dcba;
+  }
+
+  &__popup-inner {
+    padding: 40px;
+
+    
+  }
+
+  button {
+    position: relative;
+    padding: 27px 87px 27px 25px;
+
+    border: none;
+    outline: none;
+
+    color: #fff;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 1px;
+
+    background-color: #7eb252;
+
+    text-transform: uppercase;
+
+    cursor: pointer;
+
+
+
+  }
+
+  button:after {
+    content: '';
+    background-image: url(../img/jpg/arrow.png);
+    width: 31px;
+    height: 9px;
+    position: absolute;
+    right: 39px;
+    top: 29px;
+  }
+
+  &__content-title {
+    color: #303030;
+    font-family: Montserrat;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 50px;
+    max-width: 473px;
+    padding: 50px 0;
+  }
+  &__content-suptitle {
+    color: #303030;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 20px;
+    text-transform: uppercase;
+    letter-spacing: 0.7px;
+    padding-bottom: 65px;
+  }
+    &__list-items {
+      list-style-type: none;
+     
+    }
+    &__list-item {
+      position: relative;
+      color: #303030;
+      font-family: Montserrat;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 22px;
+      max-width: 445px;
+      padding-bottom: 50px;
+      padding-left: 45px;
+
+    }
+    &__list-item::before {
+      position: absolute;
+      top: calc(50% - 36px);
+      left: 0;
+      content: '';
+      background-image: url('../img/jpg/arrow__cause.svg');
+      width: 9px;
+      height: 14px;
+      background-color: #a4c58c;
+      background-color: #ffffff;
+    }
+}

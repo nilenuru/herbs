@@ -1,8 +1,37 @@
 .symptoms {
   position: relative;
-  background-color: #f6f9f3;
+  margin-bottom: 290px;
+
   &__container {
     @include wrapper;
+  }
+&__img {
+  display: inline-block;
+}
+  button {
+    position: absolute;
+    right: 236px;
+    bottom: -139px;
+    padding: 30px 150px 30px 124px;
+    border: none;
+    outline: none;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    background-color: #7eb252;
+    text-transform: uppercase;
+    cursor: pointer;
+  }
+
+  button:after {
+    content: '';
+    background-image: url(../img/jpg/arrow.png);
+    width: 31px;
+    height: 9px;
+    position: absolute;
+    right: 60px;
+    top: 29px;
   }
 
   &__title {
@@ -16,7 +45,16 @@
     padding-bottom: 70px;
   }
 
-  
+  &__background {
+    top: 180px;
+    left: 0;
+    position: absolute;
+    width: 1720px;
+    height: 540px;
+    background-color: #f6f9f3;
+    z-index: -1;
+  }
+
 
   &__wrapper {
 
@@ -24,14 +62,57 @@
     justify-content: space-between;
     align-items: center;
   }
+
+
+  &__bottom {
+    position: absolute;
+    bottom: 0;
+    right: 325px;
+
+
+
+    &-inner {
+      padding: 20px;
+      background-color: #f6f9f3;
+
+      fieldset {
+        width: 375px;
+        background-color: #f6f9f3;
+        padding: 39px 27px 39px 50px;
+        border: 1px solid rgba(164, 197, 140, 0.6);
+
+        legend {
+          color: #7eb252;
+          font-family: "Montserrat - Semi Bold";
+          font-size: 14px;
+          font-weight: 600;
+
+          line-height: 24px;
+          text-decoration: underline;
+        }
+      }
+
+
+
+      &__text {
+        color: #303030;
+        font-family: Montserrat;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24px;
+
+      }
+    }
+  }
 }
 
 .tabs {
-  background-color: #f6f9f3;
+
   text-align: left;
   padding-right: 20px;
-  padding-top: 180px;
-   width: 100%;
+  padding-top: 222px;
+  width: 100%;
+
   .tab {
     color: #303030;
     font-size: 14px;
@@ -40,13 +121,14 @@
     text-transform: uppercase;
     letter-spacing: 0.7px;
     padding: 20px 0;
-    border-bottom: 1px solid #f6f9f3;
+    border-bottom: 1px solid #edf3e8;
     cursor: pointer;
   }
 
   .tabs__box {
     display: flex;
     flex-wrap: wrap;
+    width: 670px;
 
     .tab {
       max-width: 339px;
@@ -55,9 +137,14 @@
       font-size: 16px;
       font-weight: 400;
       line-height: 20px;
-      border: 1px solid #f6f9f3;
       display: flex;
       text-transform: inherit;
+    }
+
+    .tab:nth-child(2n) {
+      border-left: 1px solid #edf3e8;
+      border-bottom: 1px solid #edf3e8;
+      padding-left: 10px;
     }
   }
 
@@ -140,8 +227,4 @@
     color: #a4c58c;
   }
 
-  // &__box{
-  //   display: flex;
-
-  // }
 }
