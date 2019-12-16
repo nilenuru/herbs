@@ -1,228 +1,232 @@
 .symptoms {
-  position: relative;
-  margin-bottom: 290px;
+    position: relative;
 
-  &__container {
-    @include wrapper;
-    text-align: left;
-  }
+    &__container {
+        @include wrapper;
+        text-align: left;
+    }
 
-  &__img {
-    display: inline-block;
-  }
+    &__img {
+        display: inline-block;
+    }
 
-  button {
-    position: absolute;
-    right: 236px;
-    bottom: -139px;
-    padding: 30px 150px 30px 124px;
-    border: none;
-    outline: none;
-    color: #fff;
-    font-size: 14px;
-    font-weight: 700;
-    letter-spacing: 1px;
-    background-color: #7eb252;
-    text-transform: uppercase;
-    cursor: pointer;
-  }
+  
 
-  button:after {
-    content: '';
-    background-image: url(../img/jpg/arrow.png);
-    width: 31px;
-    height: 9px;
-    position: absolute;
-    right: 60px;
-    top: 29px;
-  }
+    &__title {
 
-  &__title {
-    position: absolute;
-    color: #303030;
-    font-family: Montserrat;
-    font-size: 40px;
-    font-weight: 700;
-    line-height: 50px;
-    max-width: 446px;
-    padding-bottom: 70px;
-  }
+        color: #303030;
+        font-family: Montserrat;
+        font-size: 40px;
+        font-weight: 700;
+        line-height: 50px;
+        max-width: 446px;
+    }
+    &__wrapper {
 
-  &__background {
-    top: 180px;
-    left: 0;
-    position: absolute;
-    width: 1720px;
-    height: 540px;
-    background-color: #f6f9f3;
-    z-index: -1;
-  }
-
-
-  &__wrapper {
-
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
 }
 
 .tabs {
 
-  text-align: left;
-  padding-right: 20px;
-  padding-top: 222px;
-  width: 100%;
+    text-align: left;
+    padding-right: 20px;
+    padding-top: 45px;
+    width: 100%;
 
-  .tab {
-    color: #303030;
-    font-size: 14px;
-    font-weight: 600;
-    line-height: 20px;
-    text-transform: uppercase;
-    letter-spacing: 0.7px;
-    padding: 20px 0;
-    border-bottom: 1px solid #edf3e8;
-    cursor: pointer;
-  }
+    .tab.active {
+        position: relative;
+    }
 
-  .tabs__box {
-    display: flex;
-    flex-wrap: wrap;
-    width: 670px;
+    .tab.active::after {
+        content: "";
+        position: absolute;
+        right: 25px;
+        background-image: url("../img/jpg/arrow__tab.svg");
+        width: 8px;
+        height: 13px;
+    }
 
     .tab {
-      max-width: 339px;
-      padding-right: 48px;
-      color: #303030;
-      font-size: 16px;
-      font-weight: 400;
-      line-height: 20px;
-      display: flex;
-      text-transform: inherit;
+        display: flex;
+        align-items: center;
+        padding: 20px 40px 20px 0;
+        color: #303030;
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 20px;
+        text-transform: uppercase;
+        letter-spacing: 0.7px;
+        border-bottom: 1px solid #edf3e8;
+        cursor: pointer;
     }
 
-    .tab:nth-child(2n) {
-      border-left: 1px solid #edf3e8;
-      border-bottom: 1px solid #edf3e8;
-      padding-left: 10px;
-    }
-  }
+    .tabs__box {
+        display: flex;
+        flex-wrap: wrap;
+        width: 670px;
 
-  span {
-    padding-right: 21px;
-    color: #a4c58c;
-  }
+        .tab {
+            display: flex;
+            align-items: center;
+            width: 50%;
+            padding-right: 12px;
+            font-size: 16px;
+            font-weight: 400;
+            text-transform: inherit;
+
+            span {
+                font-size: 12px;
+            }
+        }
+
+        .tab.active::after {
+            display: none;
+        }
+
+        .tab:nth-child(2n) {
+            border-left: 1px solid #edf3e8;
+            border-bottom: 1px solid #edf3e8;
+            padding-left: 20px;
+        }
+    }
+
+    span {
+        padding-right: 21px;
+        color: #a4c58c;
+    }
 }
 
 .tabs-right {
-  background-image: url('../img/jpg/symptoms.jpg');
-  min-width: 500px;
-  height: 689px;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: top top;
-  position: relative;
+    position: relative;
+    min-width: 500px;
+    height: 689px;
+    background-image: url("../img/jpg/symptoms.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: -170px;
 
-  &__bottom {
-    position: absolute;
-    bottom: 0;
-    right: 85px;
-
-    &-inner {
-      padding: 20px;
-      background-color: #f6f9f3;
-
-      fieldset {
-        width: 375px;
-        background-color: #f6f9f3;
-        padding: 39px 27px 39px 50px;
-        border: 1px solid rgba(164, 197, 140, 0.6);
-
-        legend {
-          color: #7eb252;
-          font-family: "Montserrat - Semi Bold";
-          font-size: 14px;
-          font-weight: 600;
-
-          line-height: 24px;
-          text-decoration: underline;
-        }
-      }
-
-      &__text {
-        color: #303030;
-        font-family: Montserrat;
-        font-size: 16px;
-        font-weight: 400;
-        line-height: 24px;
-
-      }
+    .tab-item {
+        display: none;
+        position: absolute;
+        width: 44px;
+        height: 44px;
+        border: 9px solid rgba(255, 255, 255, .8);
+        color: #ffffff;
+        font-size: 12px;
+        font-weight: 700;
+        line-height: 25px;
+        border-radius: 50%;
+        text-align: center;
     }
-  }
 
-  .tab-item {
-    display: none;
-    width: 44px;
-    height: 44px;
-    color: #ffffff;
-    font-size: 12px;
-    font-weight: 700;
-    line-height: 25px;
-    border: 9px solid rgba(255, 255, 255, .8);
-    border-radius: 50%;
-    position: absolute;
-    text-align: center;
-  }
+    .item-1 {
+        top: 182px;
+        left: 150px;
+    }
 
-  .item-1 {
-    left: 150px;
-    top: 182px;
-  }
+    .item-2 {
+        top: 200px;
+        left: 300px;
+    }
 
-  .item-2 {
-    left: 300px;
-    top: 200px;
-  }
+    .item-3 {
+        top: 135px;
+        left: 228px;
+    }
 
-  .item-3 {
-    left: 228px;
-    top: 135px;
-  }
+    .item-4 {
+        top: 250px;
+        left: 250px;
+    }
 
-  .item-4 {
-    left: 250px;
-    top: 250px;
-  }
+    .item-5 {
+        top: 9px;
+        left: 227px;
+    }
 
-  .item-5 {
-    left: 227px;
-    top: 9px;
-  }
+    .item-6 {
+        top: 360px;
+        left: 195px;
+    }
 
-  .item-6 {
-    left: 195px;
-    top: 360px;
-  }
+    .item-7 {
+        top: 150px;
 
-  .item-7 {
+        left: 190px;
+    }
 
-    left: 190px;
-    top: 150px;
-  }
+    .item-8 {
+        top: 212px;
+        left: 244px;
+    }
 
-  .item-8 {
-    left: 244px;
-    top: 212px;
-  }
+    .item-9 {
+        top: 65px;
+        left: 210px;
+    }
 
-  .item-9 {
-    left: 210px;
-    top: 65px;
-  }
+    .tab-item:first-child {
+        display: block;
+    }
 
-  .tab-item:first-child {
-    display: block;
-  }
+    &__news {
+        position: absolute;
+        right: 85px;
+        bottom: 0;
+        max-width: 430px;
+        padding: 20px;
+        background-color: #f6f9f3;
+
+        .no-problem {
+            position: absolute;
+            bottom: -70px;
+            min-width: 500px;
+        }
+
+        .button-news {
+            padding: 30px 125px 30px 124px;
+        }
+  
+        .button::after {
+            content: "";
+            position: absolute;
+            top: 29px;
+            right: 60px;
+            width: 31px;
+            height: 9px;
+            background-image: url(../img/jpg/arrow.png);
+        }
+
+
+        &-inner {
+            border: 1px solid rgba(164, 197, 140, 0.6);
+            background-color: #f6f9f3;
+        }
+
+        &-text {
+
+            padding: 39px 27px 39px 49px;
+            color: #303030;
+            font-family: Montserrat;
+            font-size: 16px;
+
+            line-height: 24px;
+        }
+
+        &-link {
+            position: absolute;
+            bottom: 9px;
+            left: 57px;
+            padding: 0 8px;
+            background-color: #f6f9f3;
+            color: #7eb252;
+            font-size: 14px;
+            font-weight: 600;
+            line-height: 24px;
+            text-decoration: underline;
+        }
+    }
 }

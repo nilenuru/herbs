@@ -1,94 +1,92 @@
 *, *::before, *::after {
-  -webkit-box-sizing: inherit;
-          box-sizing: inherit;
+    -webkit-box-sizing: inherit;
+    box-sizing: inherit;
 }
 
 html {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 a {
-  text-decoration: none;
+    text-decoration: none;
 }
 
 img {
-  max-width: 100%;
-  height: auto;
+    max-width: 100%;
+    height: auto;
 }
 
-.visually-hidden:not(:focus):not(:active),
-input[type="checkbox"].visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  white-space: nowrap;
-  -webkit-clip-path: inset(100%);
-          clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
+.visually-hidden:not(:focus):not(:active), input[type="checkbox"].visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    -webkit-clip-path: inset(100%);
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
 }
 
 
 body {
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 400;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
 }
 
 .header {
 
-  &__wrapper {
-    @include wrapper;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 105px;
-  }
+    &__wrapper {
+        @include wrapper;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 105px;
+    }
 
-  &__text {
-    color: #9a9a9a;
-    font-family: Montserrat;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 30px;
-    margin-right: auto;
-    margin-left: 30px;
-  }
+    &__text {
+        color: #9a9a9a;
+        font-family: Montserrat;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 30px;
+        margin-right: auto;
+        margin-left: 30px;
+    }
 
-  &__phone {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-  }
+    &__phone {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+    }
 
-  &__phone::after {
-    position: absolute;
-    content: '';
-    background-image: url('../img/svg/phone.svg');
-    width: 16px;
-    height: 15px;
-    top: 5px;
-    left: -27px;
-  }
+    &__phone::after {
+        content: "";
+        position: absolute;
+        top: 5px;
+        left: -27px;
+        width: 16px;
+        height: 15px;
+        background-image: url("../img/svg/phone.svg");
+    }
 
 
-  &__link {
-    text-decoration: none;
-    font-size: 20px;
-    font-weight: 500;
-    color: #303030;
-    font-weight: 500;
-    line-height: 30px;
-  }
+    &__link {
+        text-decoration: none;
+        font-size: 20px;
+        font-weight: 500;
+        color: #303030;
+        font-weight: 500;
+        line-height: 30px;
+    }
 
-  &__phone--text {
-    font-size: 12px;
-    font-weight: 400;
-    text-align: right;
-    padding-top: 3px;
-  }
-
+    &__phone--text {
+        font-size: 12px;
+        font-weight: 400;
+        text-align: right;
+        padding-top: 3px;
+    }
 }

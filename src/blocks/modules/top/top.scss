@@ -1,196 +1,195 @@
 .top {
-  margin-bottom: 75px;
+    margin-bottom: 75px;
 
-  &__images {
+    &__images {
 
-    background-image: url('../img/jpg/bg_img.jpg');
-    background-size: cover;
-    background-position: center center;
-    width: 100%;
-    max-width: 1720px;
-    min-height: 545px;
-    margin: 0 auto;
-  }
+        background-image: url("../img/jpg/bg_img.jpg");
+        background-size: cover;
+        background-position: center center;
+        width: 100%;
+        max-width: 1720px;
+        min-height: 545px;
+        margin: 0 auto;
+    }
 
 
-  &__wrapper {
-    margin-top: -450px;
-  }
+    &__wrapper {
+        margin-top: -450px;
+    }
 
-  &__container {
-    max-width: 1170px;
-    width: 100%;
-    margin: 0 auto;
-    padding: 0 15px;
-  }
+    &__container {
+        width: 100%;
+        max-width: 1170px;
+        margin: 0 auto;
+        padding: 0 15px;
+    }
 
-  &__inner {
-    display: flex;
-    justify-content: space-between;
-  }
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+    }
 
-  &__inner-img {
-    margin-left: 125px;
-  }
+    &__inner-img {
+        margin-left: 125px;
+    }
 
-  &__inner-form {
-    max-width: 574px;
-    width: 100%;
-  }
+    &__inner-form {
+        width: 100%;
+        max-width: 574px;
+    }
 
-  &__inner-suptitle {
-    margin-top: 56px;
-    margin-bottom: 25px;
+    &__inner-suptitle {
+        margin-top: 56px;
+        margin-bottom: 25px;
 
-    font-weight: 700;
-    font-size: 14px;
-    color: #fff;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-  }
+        font-weight: 700;
+        font-size: 14px;
+        color: #fff;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+    }
 
-  &__inner-title {
-    margin-bottom: 40px;
+    &__inner-title {
+        margin-bottom: 40px;
 
-    font-weight: 600;
-    font-size: 60px;
-    color: #fff;
-  }
+        font-weight: 600;
+        font-size: 60px;
+        color: #fff;
+    }
 
-  &__inner-text {
-    margin-bottom: 80px;
+    &__inner-text {
+        margin-bottom: 80px;
 
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 24px;
-    color: #fff;
-  }
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 24px;
+        color: #fff;
+    }
 
   
 
-  // &__inner-img {
-  //   position: absolute;
-  //   top: 92px;
-  //   left: 405px;
-  // }
+    // &__inner-img {
+    //   position: absolute;
+    //   top: 92px;
+    //   left: 405px;
+    // }
 
-  // &__inner-form {
-  //   position: absolute;
-  //   top: 170px;
-  //   left: 875px;
-  //   color: #fff;
-  //   text-align: left;
-  // }
+    // &__inner-form {
+    //   position: absolute;
+    //   top: 170px;
+    //   left: 875px;
+    //   color: #fff;
+    //   text-align: left;
+    // }
 
-  // &__inner-subtitle {
-  //   display: block;
-  //   padding-bottom: 28px;
-  //   font-size: 14px;
-  //   font-weight: 700;
-  //   line-height: 30px;
-  //   text-transform: uppercase;
-  //   letter-spacing: 0.7px;
-  // }
+    // &__inner-subtitle {
+    //   display: block;
+    //   padding-bottom: 28px;
+    //   font-size: 14px;
+    //   font-weight: 700;
+    //   line-height: 30px;
+    //   text-transform: uppercase;
+    //   letter-spacing: 0.7px;
+    // }
 
-  // &__inner-title {
-  //   padding-bottom: 40px;
-  //   color: #ffffff;
-  //   font-family: "Montserrat - Semi Bold";
-  //   font-size: 60px;
-  //   line-height: 30px;
+    // &__inner-title {
+    //   padding-bottom: 40px;
+    //   color: #ffffff;
+    //   font-family: "Montserrat - Semi Bold";
+    //   font-size: 60px;
+    //   line-height: 30px;
 
-  // }
+    // }
 
-  // &__inner-text {
-  //   font-size: 18px;
-  //   font-weight: 400;
-  //   line-height: 24px;
-  //   max-width: 500px;
-  // }
+    // &__inner-text {
+    //   font-size: 18px;
+    //   font-weight: 400;
+    //   line-height: 24px;
+    //   max-width: 500px;
+    // }
 }
 
 .top-form {
-  background-color: #fff;
-  padding: 20px;
+    background-color: #fff;
+    padding: 20px;
 
-  form {
-    border: 1px solid #c8dcba;
-    position: relative;
-  }
+    form {
+        position: relative;
+        border: 1px solid #c8dcba;
+    }
 
-  &__inner {
-    padding: 45px 50px 108px 50px;
-  }
+    &__inner {
+        padding: 45px 50px 108px 50px;
+    }
 
-  &__title {
-    width: 190px;
-    margin-bottom: 35px;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 22px;
-    letter-spacing: 0.5px;
-    text-transform: uppercase;
-    color: #303030;
-  }
+    &__title {
+        width: 190px;
+        margin-bottom: 35px;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 22px;
+        letter-spacing: 0.5px;
+        text-transform: uppercase;
+        color: #303030;
+    }
 
-  input {
-    border: none;
-    padding-top: 14px;
-    padding-bottom: 14px;
+    input {
 
-    border-bottom: 1px solid #c8dcba;
-    outline: none;
+        width: 195px;
+        border: none;
+        padding-top: 14px;
+        padding-bottom: 14px;
 
-    font-size: 14px;
-    color: #000;
-    font-weight: 400;
+        border-bottom: 1px solid #c8dcba;
+        outline: none;
 
-    width: 195px;
-  }
+        font-size: 14px;
+        color: #000;
+        font-weight: 400;
+    }
 
-  input::placeholder {
-    color: #c8dcba;
-  }
+    input::placeholder {
+        color: #c8dcba;
+    }
 
-  input+input {
-    margin-left: 30px;
-  }
+    input+input {
+        margin-left: 30px;
+    }
 
-  button {
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    padding: 22px 110px 22px 70px;
+    button {
+        position: absolute;
+        right: 0;
+        bottom: 0;
 
-    border: none;
-    outline: none;
+        border: none;
+        padding: 22px 110px 22px 70px;
+        outline: none;
 
-    color: #fff;
-    font-size: 14px;
-    font-weight: 700;
-    letter-spacing: 1px;
+        color: #fff;
+        font-size: 14px;
+        font-weight: 700;
+        letter-spacing: 1px;
 
-    background-color: #7eb252;
+        background-color: #7eb252;
 
-    text-transform: uppercase;
+        text-transform: uppercase;
 
-    cursor: pointer;
-  }
+        cursor: pointer;
+    }
 
-  button:after {
-    content: '';
-    background-image: url(../img/jpg/arrow.png);
-    width: 31px;
-    height: 9px;
-    position: absolute;
-    right: 60px;
-    top: 25px;
-
-  }
+    button:after {
+        content: "";
+        position: absolute;
+        top: 25px;
+        right: 60px;
+        width: 31px;
+        height: 9px;
+        background-image: url(../img/jpg/arrow.png);
+    }
 }
 
 .top-form:nth-child(2) {
-  margin-right: 27px;
+    margin-right: 27px;
 }
 
 // .top-form {

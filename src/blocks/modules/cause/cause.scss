@@ -1,50 +1,106 @@
 .cause {
-  position: relative;
-  margin-bottom: 150px;
-  display: flex;
-  
+    padding-top: 200px;
+    padding-bottom: 200px;
 
-  &__img {
-    background-image: url('../img/jpg/cause__img.jpg');
-    width: 875px;
-    height: 645px;
-    margin-right: 70px;
-    z-index: -1;
-  }
+    &__wrapper {
+        position: relative;
+        max-width: 1720px;
+        min-height: 645px;
+        margin: 0 auto;
 
-  &__popup {
-    right: 0;
-    width: 601px;
-    height: 251px;
-    background-color: #ffffff;
-    position: absolute;
-    top: 480px;
-    left: 275px;
-    padding: 20px;
-    &-text {
-      color: #303030;
-      font-family: Montserrat;
-      font-size: 16px;
-      font-weight: 400;
-      line-height: 24px;
-      }
-  }
-
-  &__popup-wrapper {
-    border: 1px solid #c8dcba;
-  }
-
-  &__popup-inner {
-    padding: 40px;
-
+        background-image: url("../img/jpg/cause__img.jpg");
+        background-repeat: no-repeat;
     
-  }
+        margin-right: 70px;
+    }
+    &__container {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+    &__inner {
+        display: flex;
+        align-items: flex-end;
+        justify-content: flex-end;
+    }
 
-  button {
-    position: relative;
-    padding: 27px 87px 27px 25px;
+    &__box {
+        margin-right: 55px;
+        background-color: #fff;
+        padding: 20px;
+
+        &-text {
+            border: 1px solid #a4c58c;
+            padding: 30px;
+            padding-right: 80px;
+            color: #303030;
+            font-family: Montserrat;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 24px;
+        }
+    }
+    &__content {
+        width: 100%;
+        max-width: 515px;
+        padding-right: 15px;
+    }
+    &__content-title {
+        color: #303030;
+        font-family: Montserrat;
+        font-size: 40px;
+        font-weight: 700;
+        line-height: 50px;
+    
+        padding-top: 55px;
+    }
+
+    &__content-suptitle {
+        color: #303030;
+        font-family: Montserrat;
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 20px;
+        text-transform: uppercase;
+        letter-spacing: 0.7px;
+        padding: 50px 0;
+    }
+
+    &__list-items {
+        list-style-type: none;
+    }
+
+    &__list-item {
+        position: relative;
+        color: #303030;
+        font-family: Montserrat;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 22px;
+        padding-left: 40px;
+        margin-bottom: 50px;
+    }
+
+    &__list-item::before {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 0;
+        width: 9px;
+        height: 14px;
+        transform: translateY(-50%);
+        background-image: url("../img/jpg/arrow__cause.svg");
+        background-color: #a4c58c;
+        background-color: #ffffff;
+    }
+}
+
+.button {
+    display: inline-block;
+    position: absolute;
+    bottom: -50px;
 
     border: none;
+    padding: 27px 88px 27px 54px;
     outline: none;
 
     color: #fff;
@@ -57,65 +113,14 @@
     text-transform: uppercase;
 
     cursor: pointer;
+}
 
-
-
-  }
-
-  button:after {
-    content: '';
-    background-image: url(../img/jpg/arrow.png);
+.button:after {
+    content: "";
+    position: absolute;
+    top: 29px;
+    right: 39px;
     width: 31px;
     height: 9px;
-    position: absolute;
-    right: 39px;
-    top: 29px;
-  }
-
-  &__content-title {
-    color: #303030;
-    font-family: Montserrat;
-    font-size: 40px;
-    font-weight: 700;
-    line-height: 50px;
-    max-width: 473px;
-    padding: 50px 0;
-  }
-  &__content-suptitle {
-    color: #303030;
-    font-family: Montserrat;
-    font-size: 14px;
-    font-weight: 700;
-    line-height: 20px;
-    text-transform: uppercase;
-    letter-spacing: 0.7px;
-    padding-bottom: 65px;
-  }
-    &__list-items {
-      list-style-type: none;
-     
-    }
-    &__list-item {
-      position: relative;
-      color: #303030;
-      font-family: Montserrat;
-      font-size: 16px;
-      font-weight: 400;
-      line-height: 22px;
-      max-width: 445px;
-      padding-bottom: 50px;
-      padding-left: 45px;
-
-    }
-    &__list-item::before {
-      position: absolute;
-      top: calc(50% - 36px);
-      left: 0;
-      content: '';
-      background-image: url('../img/jpg/arrow__cause.svg');
-      width: 9px;
-      height: 14px;
-      background-color: #a4c58c;
-      background-color: #ffffff;
-    }
+    background-image: url(../img/jpg/arrow.png);
 }
